@@ -62,11 +62,17 @@ html, body{
     z-index: 155;
     /* border-bottom: 1px solid whitesmoke; */
     mix-blend-mode: difference;
+    /* padding: 10vh; */
     
 }
 
 #nav img {
     height: 24px;
+}
+
+#nav i{
+    font-size: 2vw;
+    display: none;
 }
 
 #nav-part2{
@@ -205,7 +211,12 @@ html, body{
     width:30vw;
 }
 
-.page3 video{
+/* .page3 h1 img::before {
+    height: 100px;
+    width: 100px;
+} */
+
+.page3 .abc{
     margin-top: 4vw;
     margin-right: 5vw;
     width: 40vw;
@@ -230,6 +241,7 @@ html, body{
     height: 100px;
     overflow: hidden;
     margin-left: 11%;
+    /* margin-left: 11%; */
 }
 .elem{
     display: flex;
@@ -257,6 +269,9 @@ html, body{
     position: absolute;
     opacity: 0;
     transition: all ease-out 0.5s;
+    object-fit: contain;
+    height: 40vh;
+    width: 40vw;
 }
 
 .elem:hover  img{
@@ -271,6 +286,14 @@ html, body{
 
 .elem img:nth-child(3){
     right: 2%;
+}
+
+.elem_down img{
+    margin-top: 100px;
+   
+    margin-left: 630px;
+    height: 10vh;
+
 }
 
 .page5{
@@ -303,8 +326,321 @@ html, body{
     border-bottom: 1.5px solid #dadada;
 }
 
+.page6{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(27, 100, 100);
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.cat-gender{
+    height: 60%;
+    width: 100%;
+    background-color: deeppink;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    border:4px solid black;
+}
+
+.unisex{
+    height: 50vh;
+    width:25vw;
+    border: 4px solid orange;
+}
+
+.men{
+    height: 50vh;
+    width:25vw;
+    border: 4px solid orange;
+}
+
+.women{
+    height: 50vh;
+    width:25vw;
+    border: 4px solid orange;
+}
+
+.cat-type{
+    height: 60%;
+    width: 100%;
+    background-color: darkred;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    border:4px solid black;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Oversized{
+    height: 50vh;
+    width:25vw;
+    border: 4px solid orange;
+    /* overflow: hidden; */
+    object-fit:contain;
+}
+
+.Fit{
+    height: 50vh;
+    width:25vw;
+    border: 4px solid orange;
+}
+
+.Hoodie{
+    height: 50vh;
+    width:25vw;
+    border: 4px solid orange;
+}
+
+.LongSleeves{
+    height: 50vh;
+    width:25vw;
+    border: 4px solid orange;
+}
+
+.Jogger{
+    height: 50vh;
+    width:25vw;
+    border: 4px solid orange;
+}
+
 footer{
     min-height: 80vh;
     width: 100%;
     /* background-color: darkmagenta; */
+}
+
+
+
+#contact {
+    background-color: var(--clr2);
+}
+
+
+
+
+.right_conatct_social_icon{
+    background: linear-gradient(to top right, var(--clr5) -5%, var(--clr2) 100%);
+}
+.contact_us{
+   /* background-color:black; */
+   padding: 120px 0px;
+}
+
+.contact_inner{
+   /* background-color: #2d2b2b; */
+   position: relative;
+   box-shadow: 20px 22px 44px #251d1dcc;
+   border-radius: 25px;
+}
+.contact_field{
+   padding: 60px 340px 90px 100px;
+}
+.right_conatct_social_icon{
+   height: 100%;
+}
+
+.contact_field h3{
+  color: #000;
+   font-size: 50px;
+   letter-spacing: 1px;
+   font-weight: 600;
+   margin-bottom: 10px
+}
+.contact_field p{
+   color: #000;
+   font-size: 13px;
+   font-weight: 400;
+   letter-spacing: 1px;
+   margin-bottom: 35px;
+}
+.contact_field .form-control{
+   border-radius: 0px;
+   border: none;
+   border-bottom: 1px solid #1f1b1b;
+}
+.contact_field .form-control:focus{
+   box-shadow: none;
+   outline: none;
+   border-bottom: 2px solid #28282d;
+}
+.contact_field .form-control::placeholder{
+   font-size: 13px;
+   letter-spacing: 1px;
+}
+
+.contact_info_sec {
+   position: absolute;
+   background-color: #938f8f;
+   right: 1px;
+   top: 18%;
+   height: 340px;
+   width: 340px;
+   padding: 40px;
+   border-radius: 25px 0 0 25px;
+}
+.contact_info_sec h4{
+   letter-spacing: 1px;
+   padding-bottom: 15px;
+   margin-left: 0;
+   background-color: transparent;
+   font-size: 10rem;
+}
+
+.info_single{
+   margin: 30px 0px;
+}
+.info_single i{
+   margin-right: 15px;
+}
+.info_single span{
+   font-size: 14px;
+   letter-spacing: 1px;
+}
+
+button.contact_form_submit {
+   background: linear-gradient(to top right, #ef2f2f -5%, #4d0202 100%);
+   border: none;
+   color: #fff;
+   padding: 10px 15px;
+   width: 100%;
+   margin-top: 25px;
+   border-radius: 35px;
+   cursor: pointer;
+   font-size: 14px;
+   letter-spacing: 2px;
+}
+.socil_item_inner li{
+   list-style: none;
+}
+.socil_item_inner li a{
+   color: #fff;
+   margin: 0px 15px;
+   font-size: 14px;
+}
+.socil_item_inner{
+   padding-bottom: 10px;
+}
+
+.map_sec{
+   padding: 50px 0px;
+}
+.map_inner h4, .map_inner p{
+   color: #000;
+   text-align: center
+}
+.map_inner p{
+   font-size: 13px;
+}
+.map_bind{
+  margin-top: 50px;
+   border-radius: 30px;
+   overflow: hidden;
+}
+.contact_field h3{
+ color: rgb(128, 119, 119);
+ font-size: 10rem;
+}
+.contact_info_sec h4 {
+ letter-spacing: 1px;
+ padding-bottom: 15px;
+ font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.copyright {
+    padding: 2rem 0;
+    text-align: center;
+    background: var(--clr1);
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.copyright p {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+
+
+
+
+
+
+@media (max-width:992px) {
+    #nav i{
+        font-size: 6vw;
+        display: initial; /*block */
+
+    }
+
+    #nav-part2{
+        display: none;
+    }
+    #nav-part3{
+        display: none;
+    }
+
+
+    .page1{
+    min-height : 50vh;
+    width: 100%;
+    /* position: relative;
+    z-index: 9;
+    padding-top: 10vh; */
+    }
+
+    .page2{
+    /* padding: 100px 5vw; */
+    min-height: 50vh;
+    width: 100% ;
+    /* border-bottom: 2px solid #dadada;
+    position: relative;
+    z-index: 9; */
+}
+
+.page3{
+    min-height: 50vh;
+    width: 100%;
+    /* padding-top: 50px; */
+    /* position : relative; */
+    /* position: relative; */
+    /* z-index: 9; */
+}
+
+.page4{
+    min-height: 50vh;
+    width: 100%;
+    /* padding:  140px 100px;
+    border-top: 2px solid white; */
+    
+}
+
+.page5{
+    min-height: 50vh;
+    width: 100%;
+    /* background-color: aqua; */
+    /* padding: 100px ; */
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+ 
 }

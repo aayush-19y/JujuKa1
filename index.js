@@ -57,6 +57,28 @@ var tl = gsap.timeline({
 })
 
 
+
+// let mm = gsap.matchMedia();
+
+// // add a media query. When it matches, the associated function will run
+// mm.add("(min-width: 800px)", () => {
+
+//   // this setup code only runs when viewport is at least 800px wide
+//   gsap.to(...);
+//   gsap.from(...);
+//   ScrollTrigger.create({...}); 
+
+//   return () => { // optional
+//     // custom cleanup code here (runs when it STOPS matching)
+//   };
+// });
+
+
+
+
+
+
+
 tl.to(".page1 h1",{
     x:-80,
     // duration:1,
@@ -103,6 +125,49 @@ tl3.to(".main",{
     backgroundColor:"#0F0D0D" ,
 })
 
+
+
+
+
+
+var ab1 = gsap.timeline({
+    scrollTrigger : {
+        trigger : "footer",
+        scroller : ".main",
+        // markers:true,
+        start : "top 700",
+        end : "top 120%",
+        scrub:3
+    }
+})
+
+
+ab1.to(".main",{
+    backgroundColor: "#0F0D0D"
+})
+
+
+var ab2 = gsap.timeline({
+    scrollTrigger : {
+        trigger : "footer",
+        scroller : ".main",
+        // markers:true,
+        start : "top 10%",
+        end : "top 20%",
+        scrub:3
+    }
+})
+
+ab2.to(".main",{
+    backgroundColor:"#fff" ,
+})
+
+
+
+
+
+
+
 var boxes = document.querySelectorAll(".box");
 // console.log(boxes);
 boxes.forEach(function(ele){
@@ -144,3 +209,11 @@ h4.forEach(function(elem){
         purple.style.opacity = "0"
     })
 })
+
+
+
+
+
+
+
+
